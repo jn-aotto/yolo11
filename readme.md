@@ -3,7 +3,25 @@
 本项目基于 YOLO11 框架，包含模型训练、预测和导出功能，支持分类、分割等任务。
 
 ## 项目结构
-yolo11/ ├── export.py # 模型导出脚本（支持 ONNX 格式） ├── export_tensorrt.py # 模型导出脚本（支持 TensorRT 格式） ├── predict_cls.py # 分类任务预测脚本 ├── predict_kailiehuahen.py # 开裂划痕检测任务预测脚本 ├── predict_person.py # 人员检测任务预测脚本 ├── train.py # 通用训练脚本 ├── train-cls.py # 分类任务训练脚本 ├── train_kailiehuahen.py # 开裂划痕检测任务训练脚本 ├── model/ # 模型文件存储目录 │ ├── yolo11m-seg.pt # 分割模型 │ ├── yolo11x-cls.pt # 分类模型 │ └── ... # 其他模型文件 ├── shiliyu/ # 示例配置文件目录 │ ├── hyp.scratch.yaml # 超参数配置文件 │ ├── yolo11m-seg.yaml # 分割模型配置文件 │ ├── yolo11x-cls.yaml # 分类模型配置文件 │ └── ... # 其他配置文件 └── ultralytics/ # YOLO 框架相关代码
+yolo11/ 
+├── export.py # 模型导出脚本（支持 ONNX 格式） 
+├── export_tensorrt.py # 模型导出脚本（支持 TensorRT 格式） 
+├── predict_cls.py # 分类任务预测脚本 
+├── predict_kailiehuahen.py # 开裂划痕检测任务预测脚本 
+├── predict_person.py # 人员检测任务预测脚本 
+├── train.py # 通用训练脚本 
+├── train-cls.py # 分类任务训练脚本 
+├── train_kailiehuahen.py # 开裂划痕检测任务训练脚本 
+├── model/ # 模型文件存储目录 
+│ ├── yolo11m-seg.pt # 分割模型 
+│ ├── yolo11x-cls.pt # 分类模型 
+│ └── ... # 其他模型文件 
+├── shiliyu/ # 示例配置文件目录 
+│ ├── hyp.scratch.yaml # 超参数配置文件 
+│ ├── yolo11m-seg.yaml # 分割模型配置文件 
+│ ├── yolo11x-cls.yaml # 分类模型配置文件 
+│ └── ... # 其他配置文件 
+└── ultralytics/ # YOLO 框架相关代码
 ## 环境依赖
 
 - Python 3.8+
